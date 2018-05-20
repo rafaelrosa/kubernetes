@@ -1,0 +1,19 @@
+Instalando o Virtual box
+
+Nessa etapa do curso iremos testar o Kubernetes localmente com a plataforma Minikube, como o minikube utiliza um ambiente virtualizado.
+
+Para que o Minikube possa utilizar esse ambiente virtualizado é necessário confirmar que nosso computador está trabalhando com o modo de Boot Seguro (Secure Boot) desabilitado, para isso devemos acessar a BIOS do equipamento. Para acessar a BIOS, irá depender da placa mãe presente na máquina, porém as formas mais comuns de acesso seria pressionar uma das teclas F1, F2 ou F10 durante o processo de inicialização.
+
+Feito isso, devemos ver uma tela de configuração. Navegue até encontrar a opção Secure Boot e confirme que a mesma está desabilitada.
+
+Agora que realizamos essa etapa, devemos instalar o VirtualBox, segue abaixo os links de instalação referente ao seu sistema operacional:
+
+Mac:
+
+http://download.virtualbox.org/virtualbox/5.1.28/VirtualBox-5.1.28-117968-OSX.dmg
+
+Windows:
+
+http://download.virtualbox.org/virtualbox/5.1.28/VirtualBox-5.1.28-117968-Win.exe
+
+Uma vez que a instalação do VirtualBox foi realizada, vamos na sequência realizar a instalação do Minikube.

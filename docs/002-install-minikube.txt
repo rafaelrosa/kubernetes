@@ -1,0 +1,39 @@
+Instalando o minikube
+
+Uma vez que a instalação do VirtualBox foi realizada, será necessário realizar a instalação do Minikube, seguem os passos de instalação:
+
+Mac:
+
+    Caso não tenha o curl instalado, digitar o seguinte comando no terminal:
+
+brew install curl
+
+    Na sequência, digitar no terminal:
+
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.22.3/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+
+Linux:
+
+Caso não tenha o curl instalado, digitar:
+
+sudo apt-get install curl
+
+Abrir o terminal e digitar o seguinte comando:
+
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && sudo chmod +x minikube && sudo mv minikube /usr/local/bin/
+
+Windows:
+
+    Realizar o download nesse link: https://storage.googleapis.com/minikube/releases/v0.22.1/minikube-windows-amd64.exe
+
+    Uma vez que o Download for concluído, ir até o local onde o arquivo foi salvo e o renomei para minikube.exe
+
+    Feito isso, adicione esse caminho do arquivo para as variáveis de ambiente de seu computador. Clique com o botão direito do mouse em Este computador e depois em Propriedades
+
+    Na sequência, clique em Configurações avançadas do ambiente
+
+    Posteriormente, clique em Variáveis de ambiente
+
+    Na opção variáveis do sistema, escolha a opção Path e depois clique no botão Editar para adicionar o caminho no qual o minikube está localizado
+
+Na sequência, iremos instalar o kubectl para nos comunicarmos com o cluster
