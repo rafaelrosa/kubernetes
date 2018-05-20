@@ -1,0 +1,45 @@
+Instalando o kubectl
+
+Para realizarmos a comunicação com o cluster gerenciado pelo Kubernetes, devemos instalar o kubectl, seguem os passos de instalação:
+
+Mac:
+
+    Abrir o terminal e digitar o seguinte comando:
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+    
+    Na sequência, devemos mudar a permissão para executável:
+
+chmod +x ./kubectl
+
+    Por fim, devemos mover o kubectl para as variáveis de ambiente:
+
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+
+Linux:
+
+    Abrir o terminal e digitar o seguinte comando:
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+
+    Na sequência, devemos mudar a permissão para executável:
+
+ chmod +x ./kubectl
+
+    Por fim, devemos mover o kubectl para as variáveis de ambiente:
+
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+Windows:
+
+Realizar o download nesse link: https://storage.googleapis.com/kubernetes-release/release/v1.7.0/bin/windows/amd64/kubectl.exe
+Coloque o kubectl no mesmo local onde foi salvo o minikube na etapa anterior
+
+Na sequência, devemos adicionar esse arquivo nas variáveis de ambiente de seu computador. Clique com o botão direito do mouse em Este computador e depois em Propriedades
+
+Na sequência, clique em Configurações avançadas do ambiente
+
+Posteriormente, clique em Variáveis de ambiente
+
+Na opção variáveis do sistema, escolha a opção Path e depois clique no botão Editar para adicionar o caminho no qual o kubectl está localizado
